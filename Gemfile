@@ -11,6 +11,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 
+gem 'jwt'
+
 group :development, :test do
   gem 'byebug'
 end
