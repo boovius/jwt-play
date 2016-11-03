@@ -1,1 +1,9 @@
 <h3>Hello <%=current_user.email %></h3>
+
+<h4>token = <%= @token %></h4>
+
+<script>
+  localStorage.setItem('jwt_play_auth_token', '<%= @token %>');
+</script>
+
+<a href='http://localhost:3500/auth?token=<%=@token%>'>click here to authorize other app</a>
